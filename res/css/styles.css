@@ -1,0 +1,46 @@
+body {
+  font-family: "Arial";
+}
+
+#vorschaufoto {
+	margin: 200px auto;
+    text-align: center;
+	background: url(../images/Logo.png);
+	width: 800px;
+	height: 400px;
+}
+
+/*.text-images {
+	padding: 50px;
+}
+
+.weather-icon {
+
+}
+
+.weather-icon-thunderstorm {
+	background-position: -400px -240px;
+}
+
+.widget-text {
+	float: left;
+	padding-left: 20px;
+}
+
+.widget-name {
+	color: #fff;
+	font-size: 36px;
+	margin: 0;
+}
+
+.widget-description {
+	color: #fff;
+	font-size: 18;
+	margin: 0;
+}
+
+.widget-caption {
+	color: #fff;
+	font-size: 12px;
+	margin: 0;
+}*/
