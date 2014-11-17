@@ -1,12 +1,21 @@
 App.ViewController = (function() {
 	var that = {},
-    slideshow,
+    mainModel = null,
+    mainView = null,
 
 	init = function() {
-		console.log("init");
-        slideshow = App.Slideshow.init();
-	};
+        mainModel = App.MainModel.init();
+        mainView = App.MainView.init();
+        $(mainModel).on("fireStartTriggers", onfireStartTriggers)
+        
+        return that;
+	},
 
+    onFireStartTriggers = function (event) {
+        mainView.setSlideshow;
+        mainView.hideDescription;
+    };
+    
 	that.init = init;
 
 	return that;
