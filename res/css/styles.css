@@ -45,6 +45,16 @@ body {
     float: left;
     margin: auto;
 }
+
+#login_input {
+	margin-top: 100px;
+	position: relative;
+}
+
+#button_group {
+	margin-top: 10px;
+}
+
 /*.text-images {
 	padding: 50px;
 }
