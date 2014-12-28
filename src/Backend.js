@@ -5,6 +5,8 @@
 	$password = null,
     $inputForNewContent = null,
     $inputForNewContent2 = null,
+    $newsButton = null,
+    $newsInput = null,
 	loginOlli = null,
 	loginJonas = null,
 	passwordOlli = "ollus",
@@ -25,8 +27,17 @@
         loginData = [loginOlli, loginJonas];
         $inputForNewContent.hide();
         $inputForNewContent2.hide();
+        $newsButton = $("#newsBtn");
+        $newsInput = $("#newsArea");
+        $newsButton.on("click", newsfeedTransaction);
         return that;
 	};
+
+    newsfeedTransaction = function() {
+        var cont = $newsInput.val();
+        console.log(cont);
+        $(that).trigger("safeToDB", [cont]);
+    },
         
     openBackend = function(event){
     	for (var i = 0; i < loginData.length; i++) {
