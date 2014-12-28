@@ -3,6 +3,8 @@
 	$loginBtn = null,
 	$username = null,
 	$password = null,
+    $inputForNewContent = null,
+    $inputForNewContent2 = null,
 	loginOlli = null,
 	loginJonas = null,
 	passwordOlli = "ollus",
@@ -16,10 +18,13 @@
         $loginBtn.on("click", openBackend);
         $username = $("#nutzername");
         $password = $("#passwort");
+        $inputForNewContent = $("#newContent");
+        $inputForNewContent2 = $("#newContent2");
         loginOlli = [usernameOlli, passwordOlli];
         loginJonas = [usernameJonas, passwordJonas];
         loginData = [loginOlli, loginJonas];
-
+        $inputForNewContent.hide();
+        $inputForNewContent2.hide();
         return that;
 	};
         
@@ -27,6 +32,8 @@
     	for (var i = 0; i < loginData.length; i++) {
     		if($username.val() === loginData[i][0] && $password.val() === loginData[i][1]){
     			$("#loginParams").hide("slow");
+                $inputForNewContent.show("slow");
+                $inputForNewContent2.show("slow");
     			break;
     		}
     	};
