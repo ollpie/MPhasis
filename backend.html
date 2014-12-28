@@ -17,18 +17,20 @@
             </div>
         </nav>
         
-        <div align="center" id="login_input">
-            <div id="nutzername" class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Nutzername">
+        <div id="loginParams">
+            <div align="center" id="login_input">
+                <div class="input-group input-group-lg">
+                    <input type="text" id="nutzername" class="form-control" placeholder="Nutzername">
+                </div>
+                <div class="input-group input-group-lg">
+                    <input type="password" id="passwort" class="form-control" placeholder="Passwort">
+                </div>
             </div>
-            <div id="nutzername" class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Passwort">
-            </div>
-        </div>
 
-        <div align="center" id="button_group">
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-info">Anmelden</button>
+            <div align="center" id="button_group">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" id="loginButton" class="btn btn-info">Anmelden</button>
+                </div>
             </div>
         </div>
                     
@@ -36,6 +38,7 @@
         <script src="src/ViewController.js"></script>
         <script src="src/MainView.js"></script>
         <script src="src/MainModel.js"></script>
+        <script src="src/Backend.js"></script>
         <script type="text/javascript" src="../MPhasis/libs/jquery-2.0.3.min.js"></script>
         <script src="../MPhasis/libs/bootstrap/js/bootstrap.min.js"></script>
         <script src="../MPhasis/libs/underscore-min.js"></script>

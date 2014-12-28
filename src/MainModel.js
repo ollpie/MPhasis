@@ -2,7 +2,7 @@
 	var that = {},
 
 	init = function() {
-        $(that).trigger("fireStartTriggers", []);
+        
 	};
         
     
