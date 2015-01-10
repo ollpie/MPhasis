@@ -35,7 +35,8 @@
     addNewsfeed = function(content) {
         db.transaction(function (tx) {  
             console.log("database: " + content);
-            tx.executeSql('INSERT INTO LOGS (id,log) VALUES (?, ?)', ["2", content]);
+            var id = 2;
+            tx.executeSql('INSERT INTO newsfeed(id,news) VALUES(?, ?)', [3, content]);
         });
     };
 
